@@ -11,3 +11,7 @@ exports.studentPage= (req,res)=>{
 exports.registerPage= (req,res)=>{
     res.render('register')
 }
+
+exports.loginPage= (req,res)=>{
+    res.render('login')
+}

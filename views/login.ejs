@@ -1,0 +1,32 @@
+<!--header section-->
+<%-include('includes/_header')  %>
+<!--header section-->
+
+<!--login section-->
+<div class="container">
+    <div class="form-box">
+        <h2>Login</h2>
+        <form action="/student/login" method="POST">
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <p class="register-link">
+                Don't have an account? <a href="/student/register">Register here</a>
+            </p>
+        </form>
+    </div>
+</div>
+<!--login section-->
+
+<!--footer section-->
+<%-include('includes/_footer')  %>
+<!--footer section-->

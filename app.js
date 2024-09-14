@@ -2,7 +2,10 @@ const express = require('express')
 const router = require('./server/routes/router')
 const path = require('path')
 const db = require('./server/database/database')
+const passport = require('./server/authentication/auth')
 const app = express()
+
+app.use(passport.initialize());
 
 
 const bodyparser = require('body-parser')
