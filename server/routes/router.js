@@ -5,9 +5,14 @@ const controller = require('../controller/controller')
 router.get('/',services.homePage)
 
 /*
-Student GET/POST  |METHOD
+Student GET/POST  |METHOD  ||Routes
 */
+router.get('/student',services.studentPage)
+router.get('/student/register',services.registerPage)
 
-router.post('/student/login',controller.register)
+/*
+* Student GET/POST  |METHOD  || Controller
+*/
+router.post('/student/register',controller.register)
 
 module.exports = router
