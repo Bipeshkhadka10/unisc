@@ -1,0 +1,39 @@
+<!--header section-->
+<%- include('includes/_header') %>
+<!--header section-->
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>College Registration</h2>
+            <form action="/submit-college-form" method="POST" enctype="multipart/form-data">
+                <div class="input-box">
+                    <label for="collegeName">College Name</label>
+                    <input type="text" id="collegeName" name="collegeName" placeholder="Enter your college name" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="collegeEmail">College Email</label>
+                    <input type="email" id="collegeEmail" name="collegeEmail" placeholder="Enter your college email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="collegeAddress">College Address</label>
+                    <input type="text" id="collegeAddress" name="collegeAddress" placeholder="Enter your college address" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="collegeLogo">College Logo</label>
+                    <input type="file" id="collegeLogo" name="collegeLogo" accept="image/*" required>
+                </div>
+
+                <button type="submit">Register College</button>
+
+                <p class="register-login-link">
+                    Don't have an account? <a href="/college/login">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+<!--footer section-->
+<%- include('includes/_footer') %>
+<!--footer section-->

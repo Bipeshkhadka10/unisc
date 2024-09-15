@@ -15,3 +15,16 @@ exports.registerPage= (req,res)=>{
 exports.loginPage= (req,res)=>{
     res.render('login')
 }
+
+
+exports.registerCollegePage= (req,res)=>{
+    res.render('collegeRegister')
+}
+
+exports.loginCollegePage= (req,res)=>{
+    res.render('collegeLogin')
+}
+
+exports.pendingPage= (req,res)=>{
+    res.render('collegeApprove')
+}

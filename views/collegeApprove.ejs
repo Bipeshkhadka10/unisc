@@ -1,0 +1,38 @@
+<!--header section-->
+<%- include('includes/_header') %>
+<!--header section-->
+
+<!--main section-->
+<div class="container">
+    <h2>College Registration Review</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>College Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Logo</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>ABC College of Technology</td>
+                <td>abc@college.com</td>
+                <td>123 Tech Street, New York</td>
+                <td><img src="college-logo.png" alt="College Logo" class="college-logo"></td>
+                <td>
+                    <button class="approve-btn">Approve</button>
+                    <button class="reject-btn">Reject</button>
+                </td>
+            </tr>
+            <!-- Additional rows can go here -->
+        </tbody>
+    </table>
+</div>
+<!--main section-->
+
+<!--footer section-->
+<%- include('includes/_footer') %>
+<!--footer section-->
